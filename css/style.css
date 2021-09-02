@@ -1,0 +1,827 @@
+:root {
+    /* background */
+    --c-yellow: #FED100;
+    --c-black: #333333;
+    --c-black-light: #6b6868;
+    --c-red: #FF352B;
+    --c-white: #FFFFFF;
+    --c-green-light: #F8FBFF;
+   
+  
+    /* text */
+    --txt-c-yellow: var(--c-yellow);
+    --txt-c-black: var(--c-black);
+    --txt-c-black-light: var(--c-black-light);
+    --txt-c-red: var(--c-red);
+    --txt-c-white: var(--c-white);
+    --txt-c-green-light: var(--c-green-light);
+
+  
+    /* font*/ 
+    --font-main: 'Montserrat', sans-serif;
+  
+    /* container width 
+    --vertical-scroll: 20px;
+    --mobile: calc(300px + var(--vertical-scroll));
+    --tablet: calc(640px + var(--vertical-scroll));
+    --desktop: calc(900px + var(--vertical-scroll));
+    --desktop-lg: calc(1270px + var(--vertical-scroll));*/
+  
+    /* animation 
+    --animation-fast: 0.1s;
+    --animation-slow: 0.3s; 
+
+    --animation-transition: all 0.2s ease-in-out;*/
+  }
+  
+ /* @font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/acrom/Acrom-ExtraBold.eot");
+    src: local("Acrom ExtraBold"), local("Acrom-ExtraBold"),
+      url("../fonts/acrom/Acrom-ExtraBold.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/acrom/Acrom-ExtraBold.woff") format("woff"),
+      url("../fonts/acrom/Acrom-ExtraBold.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  @font-face {
+      font-family: 'Montserrat';
+      src: url('../fonts/acrom/Acrom-Bold.eot');
+      src: local('Acrom Bold'), local('Acrom-Bold'),
+          url('../fonts/acrom/Acrom-Bold.eot?#iefix') format('embedded-opentype'),
+          url('../fonts/acrom/Acrom-Bold.woff') format('woff'),
+          url('../fonts/acrom/Acrom-Bold.ttf') format('truetype');
+      font-weight: bold;
+      font-style: normal;
+  }
+  
+  @font-face {
+      font-family: 'Montserrat';
+      src: url('../fonts/acrom/Acrom-Regular.eot');
+      src: local('Acrom Regular'), local('Acrom-Regular'),
+          url('../fonts/acrom/Acrom-Regular.eot?#iefix') format('embedded-opentype'),
+          url('../fonts/acrom/Acrom-Regular.woff') format('woff'),
+          url('../fonts/acrom/Acrom-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+  }*/
+
+ /* html {
+    scroll-behavior: smooth;
+  }*/
+
+  body {
+    font-family: var(--font-main);
+    box-sizing: border-box;
+  }
+
+  .container{
+    min-width: 325px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container-pereezd {
+    background: var(--c-yellow);
+  }
+
+  .container-tv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+  }
+
+  .yellow {
+    background: var(--c-yellow);
+  }
+
+  .white {
+    background: var(--c-white);
+    padding-bottom: 45px;
+  }
+
+  .green-light {
+    background: var(--c-green-light);
+    padding-top: 50px;
+  }
+
+  .red {
+    background-color: var(--c-red);
+    color: var(--c-white);
+  }
+
+  .navigation {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .movee {
+   letter-spacing: 1px;
+    margin-left: 15px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .navigation-ssulki, .kont-tel  {
+    display: none;
+  }
+
+
+
+  label.hamburger {
+    position: relative;
+    height: 50px;
+    width: 44px;
+    margin-right: 15px;
+  }
+
+  label.hamburger>i {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 50%;
+    background-color: var(--c-black);
+}
+
+label.hamburger>i:before, label.hamburger>i:after {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: var(--c-black);
+    content: "";
+}
+
+label.hamburger>i:before {
+    transform: translate(0%,-10px);
+}
+
+label.hamburger>i:after {
+    transform: translate(0%,10px);
+}
+
+.front-desktop {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+  }
+
+.front-desktop-inside {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.front-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.front-text-main {
+  line-height: 37px;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.zakaz-btn {
+  width: 290px;
+  height: 60px;
+  border: 0;
+  cursor: pointer;
+  line-height: 24px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.zakaz {
+  margin-bottom: 40px;
+}
+
+.front-foto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.front-foto-man {
+}
+
+.front-foto-man-text {
+  position: absolute;
+  line-height: 24px;
+  font-size: 20px;
+  font-weight: 500;
+  bottom: 45px;
+  left: 80px;
+  transform: rotate(-7deg);
+}
+ 
+.front-text-foto {
+  position: absolute;
+  top: 12px;
+  line-height: 22px;
+  font-size: 18px; 
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.front-text-foto-desktop {
+  display: none;
+}
+
+.front-foto-desktop {
+  display: none;
+}
+
+.tv-planka {
+  display: none;
+}
+
+.front-text-2 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.spisok-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.spisok-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.spisok-block:last-child {
+  margin-bottom: 0;
+}
+
+.spisok-marker {
+  margin-left: 20px;
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 61px;
+  color: #A65F00;
+}
+
+.spisok {
+  width: 175px;
+  box-sizing: border-box;
+  line-height: 21px;
+  font-weight: 400;
+  font-size: 16px;
+  margin-left: 30px;
+  letter-spacing: 1px;
+}
+
+.price {
+  margin-top: 5px;
+  line-height: 24px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.price-2 {
+  margin-top: 40px;
+  line-height: 22px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.price-3 {
+  margin-top: 24px;
+  line-height: 21px;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.price-4 {
+  margin-top: 15px;
+  line-height: 21px;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+}
+
+.price-5 {
+  margin-top: 45px;
+  line-height: 37px;
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+}
+
+.price-5 i {
+  position: absolute;
+  font-size: 25px;
+  bottom: 6px;
+  right: -20px;
+}
+
+.price-6 {
+  margin-bottom: 50px;
+  text-decoration: underline;
+}
+
+.zakaz-2 {
+  background-color: var(--c-yellow);
+  margin-top: 50px;
+}
+
+.text-zakaz-2 {
+  line-height: 25px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.avtopark {
+  margin-top: 40px;
+  line-height: 24px;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.avtopark-2 {
+  width: 270px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  line-height: 20px;
+  font-weight: 500;
+  font-size: 16px; 
+  letter-spacing: 1.6px;
+}
+
+.foto_auto {
+  margin-top: 40px;
+}
+
+.avtopark-3 {
+  margin-top: 20px;
+  line-height: 15px;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+.step {
+  width: 120px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--c-black);
+}
+
+.zakaz-2:nth-child(0) {
+  margin-bottom: 45px;
+}
+
+.otzuv {
+  margin-top: 40px;
+  line-height: 24px;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+.otzuv-main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 14px;
+}
+
+.name {
+  margin-left: 3%;
+  line-height: 22px;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+}
+
+.date-star {
+  margin-left: 3%;
+  display: flex;
+  flex-direction: row;
+}
+
+.date {
+  margin-top: 10px;
+  line-height: 21px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.star {
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.text-otzuv {
+  width: 94%;
+  margin-top: 35px;
+  line-height: 21px;
+  font-size: 16px;
+  font-weight: 400;
+  align-self: center;
+}
+
+.text-otzuv-ssulka {
+  margin-left: 3%;
+  margin-top: 15px;
+  line-height: 21px;
+  font-size: 16px;
+  font-weight: 500; 
+  color: var(--c-black);
+  letter-spacing: 1.2px;
+}
+
+.otzuv-btn {
+  width: 290px;
+  height: 60px;
+  border: 1px solid;
+  margin-top: 45px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  line-height: 24px;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--c-black);
+  letter-spacing: 1.2px;
+}
+
+.front-zakaz {
+  margin-top: 40px;
+  width: 220px;
+  text-align: center;
+}
+
+.front-zakaz h3 {
+  margin-bottom: 0px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.front-zakaz-second {
+  margin-top: 10px;
+  line-height: 20px;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.zakaz-forma {
+  width: 90%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.zakaz-forma-block {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  height: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 40px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--c-black);
+}
+
+.zakaz-forma-block-2 {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  height: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 80px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--c-black);
+}
+
+.check {
+  width: 290px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 60px;
+}
+
+.check p {
+  margin-top: 3px;
+  margin-left: 10px;
+  line-height: 15px;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.9px;
+}
+
+.zakaz-3 {
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.map {
+  padding: 0;
+  margin: 0;
+}
+
+#googleMap {
+  min-width: 325px;
+  width: 100%;
+  padding-bottom: 0;
+}
+
+#googleMap img {
+  width: 100%;
+}
+
+.adress {
+  align-self: flex-start;
+  margin-top: 45px;
+  margin-left: 14%;
+  line-height: 20px;
+  font-weight: 400;
+  font-size: 15px; 
+  letter-spacing: 1.1px;
+}
+
+.tel {
+  align-self: flex-start;
+  margin-top: 20px;
+  margin-left: 14%;
+  line-height: 20px;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.8px;
+}
+
+.mail {
+  align-self: flex-start;
+  margin-top: 20px;
+  margin-bottom: 45px;
+  margin-left: 14%;
+  line-height: 20px;
+  font-weight: 400;
+  font-size: 15px;
+  text-decoration: underline;
+  letter-spacing: 1.2px;
+}
+
+.footer-logo {
+  margin-top: 60px;
+  margin-bottom: 15px;
+  line-height: 37px;
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: 1.3px;
+}
+
+.footer-sogl {
+  text-align: center;
+  width: 190px;
+  margin-top: 20px;
+  line-height: 21px;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1.3px;
+}
+
+.footer-sogl-2 {
+  text-align: center;
+  width: 240px;
+  margin-top: 20px;
+  margin-bottom: 45px;
+  line-height: 21px;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1.3px;
+}
+
+.footer-ssulka {
+  margin-bottom: 15px;
+  line-height: 25px;
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--c-black);
+  letter-spacing: 1.1px;
+}
+
+.social-links {
+  margin-top: 30px;
+  width: 210px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.social-links-w {
+  display: flex; 
+  flex-direction: row;
+}
+
+.social-links-items-link { 
+  color: var(--c-black);
+}
+
+.social-links-items-back {
+  background-color: var(--c-black);
+  color: var(--c-yellow);
+}
+
+.social-links-items {
+  font-size: 20px;
+}
+
+.mail-2 {
+  line-height: 24px;
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: underline;
+  margin-bottom: 0;
+  letter-spacing: 1.4px;
+}
+
+
+@media only screen and (min-width: 1000px) {
+
+.container-pereezd {
+    background-color: var(--c-white);
+  }
+
+.container-tv {
+  width: 80%;
+  align-items: flex-start;
+  background-color: var(--c-yellow);
+  border: solid;
+  border-color: var(--c-black);
+  border-width: 30px 25px 40px 25px;
+  border-radius: 5% 5% 0 0;
+  position: relative;
+}
+
+.tv-planka {
+  display: block;
+  position: absolute;
+  background-color: var(--c-black-light);
+  width: 100%;
+  height: 20px;
+  bottom: -45px;
+  border-radius: 0 0 45% 45%;
+}
+
+.navigation {
+  margin-top: 50px;
+}
+
+.movee {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+label.hamburger {
+    display: none;
+  }
+
+.navigation-ssulki {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation-ssulki a {
+  color: var(--c-black);
+  text-decoration: none;
+
+}
+
+.kont-tel {
+  display: block;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  margin-right: 15px;
+  text-decoration: underline;
+}
+
+.front-text {
+  text-align: left;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 15px;
+  margin-top: 75px;
+}
+
+.front-text-main {
+  line-height: 73px;
+  font-size: 70px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.front-foto {
+  display: none;
+}
+
+.front-foto-man {
+  margin-top: 15px;
+}
+
+.front-foto-man-text {
+  position: absolute;
+  line-height: 24px;
+  font-size: 20px;
+  font-weight: 500;
+  bottom: 45px;
+  left: 80px;
+  transform: rotate(-7deg);
+}
+
+
+.front-text-foto-desktop {
+  display: block;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 50px;
+  letter-spacing: 3px;
+}
+
+.zakaz {
+  align-self: flex-start;
+  margin-left: 15px;
+  margin-top: 40px;
+}
+
+.front-foto-desktop {
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-end;
+  position: relative;
+  margin-right: 10%;
+}
+
+.front-desktop {
+    width: 100%;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; 
+    justify-content: space-between;
+  }
+
+.front-desktop-inside {
+  width: 460px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+
+}
